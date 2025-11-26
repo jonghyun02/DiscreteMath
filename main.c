@@ -211,9 +211,8 @@ void processInput2() {
         dijkstra(1);
 
         for (int i = 2; i <= n; i++) {
-            if (dist[i] == INF) {
-                printf("정점 [%d]: 경로 없음\n", i);
-            } else {
+            if (dist[i] == INF){}
+            else {
                 printf("정점 [%d]: ", i);
                 printPath(i);
                 printf(", 길이: %d\n", dist[i]);
